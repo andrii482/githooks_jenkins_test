@@ -1,7 +1,7 @@
 pipeline {
   agent any
   
-  triggers {
+  triggers :
     - github-pull-request:
         cron: '* * * * *'
         github-hooks: true
@@ -16,7 +16,7 @@ pipeline {
         failure-comment: "failure comment"
         error-comment: "error-comment"
         cancel-builds-on-update: true
-  }
+  
   tools {nodejs "nodejs"}
 
   options { timestamps () 
