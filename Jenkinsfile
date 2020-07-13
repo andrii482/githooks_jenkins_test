@@ -2,6 +2,7 @@ pipeline {
   agent any
   
   triggers {
+    pollSCM '* * * * *'
  /*   - github-pull-request:
         cron: '* * * * *'
         github-hooks: true
