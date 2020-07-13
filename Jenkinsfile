@@ -1,8 +1,8 @@
 pipeline {
   agent any
   
-  triggers :
-    - github-pull-request:
+  triggers {
+ /*   - github-pull-request:
         cron: '* * * * *'
         github-hooks: true
         permit-all: true
@@ -15,7 +15,7 @@ pipeline {
         success-comment: "success comment"
         failure-comment: "failure comment"
         error-comment: "error-comment"
-        cancel-builds-on-update: true
+        cancel-builds-on-update: true */ }
   
   tools {nodejs "nodejs"}
 
