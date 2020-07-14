@@ -5,7 +5,10 @@ pipeline {
   
   tools { nodejs "nodejs" }
 
-  options { timestamps () }
+  options { 
+    timestamps () 
+    ansiColor('xterm') 
+  }
  
   
   stages {    
