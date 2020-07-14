@@ -6,7 +6,7 @@ pipeline {
   tools {nodejs "nodejs"}
 
   options { timestamps () 
-            ansiColor('xterm') 
+            ansiColor() 
           }
  
   
