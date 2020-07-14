@@ -5,9 +5,7 @@ pipeline {
   
   tools {nodejs "nodejs"}
 
-  options { timestamps () 
-            ansiColor() 
-          }
+  options { timestamps ()}
  
   
   stages {    
