@@ -14,6 +14,6 @@ pipeline {
     }        
   }
   post { 
-    always { cleanWs deleteDirs:true }
+    always { cleanWs () }
   }
 }
