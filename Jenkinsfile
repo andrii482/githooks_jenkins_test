@@ -10,7 +10,9 @@ pipeline {
   
   stages {    
     stage('Cloning Git') {
-      steps { sh  'npm i' }
+      steps { 
+        sh 'git clone https://github.com/andrii482/githooks_jenkins_test && cd githooks_jenkins_test && npm i' 
+      }
     }        
   }
  /* post { 
