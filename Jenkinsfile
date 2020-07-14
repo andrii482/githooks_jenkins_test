@@ -13,5 +13,7 @@ pipeline {
       steps { sh  'npm i' }
     }        
   }
-
+  post { 
+    always { cleanWs() }
+  }
 }
