@@ -3,9 +3,9 @@ pipeline {
   
   triggers { pollSCM '* * * * *' }
   
-  tools {nodejs "nodejs"}
+  tools { nodejs "nodejs" }
 
-  options { timestamps ()}
+  options { timestamps () }
  
   
   stages {    
@@ -14,6 +14,6 @@ pipeline {
     }        
   }
   post { 
-    always { cleanWs()}
+    always { cleanWs deleteDirs: true }
   }
 }
